@@ -1,0 +1,113 @@
+/* === CONTENEDOR PRINCIPAL === */
+.registro-container {
+  max-width: 450px;
+  background: linear-gradient(145deg, #1b1b1f, #232328);
+  color: white;
+  padding: 2.5rem;
+  margin: 3rem auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(255, 0, 90, 0.3);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* DECORACIÓN SUAVE */
+.registro-container::before {
+  content: "💪";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.6rem;
+  opacity: 0.4;
+}
+
+.registro-container::after {
+  content: "🔥";
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-size: 1.6rem;
+  opacity: 0.4;
+}
+
+/* === TITULO === */
+.registro-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.registro-container h1 span {
+  color: #ff0077;
+}
+
+/* === CAMPOS === */
+.form-group {
+  text-align: left;
+  margin-bottom: 1.4rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #ff99cc;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background-color: #111;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus {
+  border-color: #ff0077;
+  box-shadow: 0 0 10px rgba(255, 0, 119, 0.3);
+}
+
+/* === ERRORES === */
+.error {
+  color: #ff4444;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  display: block;
+  text-shadow: 0 0 5px rgba(255, 68, 68, 0.4);
+}
+
+/* === BOTÓN === */
+.btn-submit {
+  background: linear-gradient(90deg, #ff0077, #ff6600);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(90deg, #ff3399, #ff7700);
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 80, 150, 0.4);
+}
+
+.btn-submit:active {
+  transform: scale(0.97);
+}
+
+/* === ANIMACIÓN === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

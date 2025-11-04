@@ -1,0 +1,38 @@
+.contenedor-principal {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+/* Barra de progreso */
+.barra-progreso {
+  background-color: #333;
+  border-radius: 10px;
+  height: 10px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.barra-progreso .relleno {
+  background: linear-gradient(90deg, #ff007f, #ff6600);
+  height: 100%;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+/* Mensaje final */
+.mensaje-final {
+  text-align: center;
+  background: #111;
+  padding: 40px;
+  border-radius: 10px;
+  color: #ff66b3;
+  animation: aparecer 0.7s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
